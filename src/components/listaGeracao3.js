@@ -2,7 +2,8 @@ import * as React from 'react';
 import { TouchableHighlight, StyleSheet, View, Text, Image, } from 'react-native'
 
 const ListaGeracao3 = (props) => {
-    const {pokemons} = props
+    const {pokemons, onPress} = props
+    const pokemonsRender = pokemons.slice(251, 387)
     return (
         <TouchableHighlight styles={{}} onPress={{}}>
             <Image 

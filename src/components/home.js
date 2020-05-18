@@ -11,7 +11,7 @@ import ListaGeracao7 from './listaGeracao7'
 
 class Home extends React.Component {
     constructor(props) {
-        super()
+        super(props)
         this.state = {
             pokemons: []
         }
@@ -39,13 +39,13 @@ class Home extends React.Component {
                         flexDirection: 'row',
                         justifyContent: 'center'
                     }}>
-                        <ListaGeracao1 pokemons={this.state.pokemons}/>
-                        <ListaGeracao2 />
-                        <ListaGeracao3 />
-                        <ListaGeracao4 />
-                        <ListaGeracao5 />
-                        <ListaGeracao6 />
-                        <ListaGeracao7 />
+                        <ListaGeracao1 pokemons={this.state.pokemons} onPress={(pageParams) => { this.props.navigation.navigate('Geracao', pageParams) }} />
+                        <ListaGeracao2 pokemons={this.state.pokemons} onPress={(pageParams) => { this.props.navigation.navigate('Geracao', pageParams) }} />
+                        <ListaGeracao3 pokemons={this.state.pokemons} />
+                        <ListaGeracao4 pokemons={this.state.pokemons} />
+                        <ListaGeracao5 pokemons={this.state.pokemons} />
+                        <ListaGeracao6 pokemons={this.state.pokemons} />
+                        <ListaGeracao7 pokemons={this.state.pokemons} />
 
                     </View>
                 </ScrollView>
