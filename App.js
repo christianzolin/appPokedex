@@ -12,7 +12,7 @@ export default App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name={'home'} component={Home} />
+        <Stack.Screen name={'Pokedex'} component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
   );
