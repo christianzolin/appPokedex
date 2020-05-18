@@ -39,11 +39,11 @@ class Home extends React.Component {
                     }}>
                         <ListaGeracao1 pokemons={this.state.pokemons} onPress={(pageParams) => { this.props.navigation.navigate('Geracao', pageParams) }} />
                         <ListaGeracao2 pokemons={this.state.pokemons} onPress={(pageParams) => { this.props.navigation.navigate('Geracao', pageParams) }} />
-                        <ListaGeracao3 pokemons={this.state.pokemons} />
-                        <ListaGeracao4 pokemons={this.state.pokemons} />
-                        <ListaGeracao5 pokemons={this.state.pokemons} />
-                        <ListaGeracao6 pokemons={this.state.pokemons} />
-                        <ListaGeracao7 pokemons={this.state.pokemons} />
+                        <ListaGeracao3 pokemons={this.state.pokemons} onPress={(pageParams) => { this.props.navigation.navigate('Geracao', pageParams) }} />
+                        <ListaGeracao4 pokemons={this.state.pokemons} onPress={(pageParams) => { this.props.navigation.navigate('Geracao', pageParams) }} />
+                        <ListaGeracao5 pokemons={this.state.pokemons} onPress={(pageParams) => { this.props.navigation.navigate('Geracao', pageParams) }} />
+                        <ListaGeracao6 pokemons={this.state.pokemons} onPress={(pageParams) => { this.props.navigation.navigate('Geracao', pageParams) }} />
+                        <ListaGeracao7 pokemons={this.state.pokemons} onPress={(pageParams) => { this.props.navigation.navigate('Geracao', pageParams) }} />
 
                     </View>
                 </ScrollView>

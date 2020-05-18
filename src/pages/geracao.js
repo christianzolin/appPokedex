@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, ScrollView, View, Image, Text, TouchableOpacity } from 'react-native';
+import { StyleSheet, ScrollView, View, Image, Text, TouchableOpacity, FlatList} from 'react-native';
 import ListaPokemons from '../components/listaPokemons';
 
 class Geracao extends React.Component {
@@ -18,6 +18,15 @@ class Geracao extends React.Component {
                     })
                 }
             </ScrollView>
+    //      <FlatList style={{}}
+    //      data={pokemonsRender}
+    //      renderItem={({ pokemon }) => (
+    //         <ListaPokemons key={pokemon.name} pokemon={pokemon} onPress={(params) => { this.props.navigation.navigate('Detalhes', params) }} />
+    //      )}
+    //      keyExtractor={item => item.id}
+    //  />
+
+
         )
     }
 }

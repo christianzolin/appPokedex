@@ -19,8 +19,8 @@ const ListaDestalhesPokemon = props => {
 
     return(
         <View style={{flex: 1,}}>
-            <Image source={{uri: imagem}} style={{flex: 1 }}/>
-            <View style={{flex: 2}}>
+            <Image source={{uri: imagem}} style={{flex: 1, aspectRatio:1, alignSelf:'center'}}/>
+            <View style={{flex: 1}}>
                 <Line label={'ID'} content={pokemon.id} />
                 <Line label={'Nome'} content={pokemon.name} />
                 <Line label={'Tamanho'} content={pokemon.height} />
