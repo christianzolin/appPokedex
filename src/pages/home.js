@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { StyleSheet, View, Text, Image, ScrollView } from 'react-native'
 import axios from 'axios'
-import ListaGeracao1 from './listaGeracao1'
-import ListaGeracao2 from './listaGeracao2'
-import ListaGeracao3 from './listaGeracao3'
-import ListaGeracao4 from './listaGeracao4'
-import ListaGeracao5 from './listaGeracao5'
-import ListaGeracao6 from './listaGeracao6'
-import ListaGeracao7 from './listaGeracao7'
+import ListaGeracao1 from '../components/listaGeracao1'
+import ListaGeracao2 from '../components/listaGeracao2'
+import ListaGeracao3 from '../components/listaGeracao3'
+import ListaGeracao4 from '../components/listaGeracao4'
+import ListaGeracao5 from '../components/listaGeracao5'
+import ListaGeracao6 from '../components/listaGeracao6'
+import ListaGeracao7 from '../components/listaGeracao7'
 
 class Home extends React.Component {
     constructor(props) {
@@ -29,9 +29,7 @@ class Home extends React.Component {
     render() {
         return (
             <View style={{ flex: 1, alignItems: 'center' }}>
-                <Image source={__DEV__
-                    ? require('../imagens/logo.png')
-                    : require('../imagens/logo.png')}
+                <Image source={require('../imagens/logo.png')}
                     style={{ height: 120, width: 330, marginTop: 15 }} />
                 <ScrollView>
                     <View style={{
